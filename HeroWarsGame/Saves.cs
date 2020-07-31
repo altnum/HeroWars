@@ -33,6 +33,46 @@ namespace HeroWarsGame
         internal static List<Hero> heroes = new List<Hero>();
         public Saves()
         {
+
+            using (StreamReader f = new StreamReader(@"D:\\HeroWarsSaves.txt"))
+            {
+                foreach (var c in LogIn.users)
+                {
+                    if (c.Name == LogIn.username)
+                    {
+                        c.Heroes = "";
+                    }
+                }
+                while (!f.EndOfStream)
+                {
+                    string line = f.ReadLine();
+                    
+
+                    foreach (var c in LogIn.users)
+                    {
+                        if (c.Name == LogIn.username)
+                        {
+                            if (c.Heroes.Length > 2)
+                                c.Heroes += "/" + line;
+                            else
+                                c.Heroes += line;
+                        }
+                    }
+                }
+            }
+            using (FileStream file = new FileStream(@"D:\\Users.txt", FileMode.Truncate, FileAccess.Write))
+            {
+                StreamWriter sw = new StreamWriter(file);
+                foreach (var c in LogIn.users)
+                {
+                    
+                    sw.WriteLine(c.Name + "|" + c.Password + "|" + c.Heroes);
+                    
+                }
+                sw.Close();
+                sw.Dispose();
+            }
+
             InitializeComponent();
 
             RefreshCharList();
@@ -82,12 +122,15 @@ namespace HeroWarsGame
             try
             {
                 if (new FileInfo(filePath).Length != 0)
+
+
                     using (StreamReader heroFile = File.OpenText(@"D:\\HeroWarsSaves.txt"))
                     {
-
+                        
                         while (!heroFile.EndOfStream)
                         {
                             string line = heroFile.ReadLine();
+
                             string[] info = line.Split(',');
                             SavedCharacterList.Items.Add(info[0] + " lvl: " + info[4]);
 
@@ -135,6 +178,18 @@ namespace HeroWarsGame
         }
         private void NoCharacters()
         {
+            using (FileStream file = new FileStream(@"D:\Users.txt", FileMode.Truncate, FileAccess.Write))
+            {
+                StreamWriter sw = new StreamWriter(file);
+                foreach (var c in LogIn.users)
+                {
+
+                    sw.WriteLine(c.Name + "|" + c.Password + "|" + c.Heroes);
+
+                }
+                sw.Close();
+                sw.Dispose();
+            }
             this.Hide();
             MessageBox.Show("You ran out of characters! Create a new one.");
             CharacterCreator createcharacter = new CharacterCreator();
@@ -168,6 +223,7 @@ namespace HeroWarsGame
                         }
 
                     }
+                    
                     selectedProfile = SavedCharacterList.SelectedItem.ToString();
                 }
                 else
@@ -214,11 +270,11 @@ namespace HeroWarsGame
                     throw new Exception("No character selected!");
                 else
                     throw new Exception("No character selected!");
-            } 
-            catch
-            {
+           } 
+           catch
+           {
                 MessageBox.Show("No character selected!");
-            }
+           }
         }
 
         private void Saves_Delete_Click(object sender, EventArgs e)
@@ -240,11 +296,16 @@ namespace HeroWarsGame
                         save.DeleteChar(characterNameToDelete);
                         
                         RefreshCharList();
-                        
+
 
                         if (new FileInfo(@"D:\\HeroWarsSaves.txt").Length == 0)
-                            NoCharacters();
+                        {
+                            foreach (var c in LogIn.users)
+                                if (c.Name == LogIn.username)
+                                    c.Heroes = "";
 
+                            NoCharacters();
+                        }
 
 
                     }
@@ -274,6 +335,11 @@ namespace HeroWarsGame
             CharacterCreator createcharacter = new CharacterCreator();
             createcharacter.ShowDialog();
             this.Close();
+        }
+
+        private void Saves_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            e.Cancel = (e.CloseReason == CloseReason.UserClosing);
         }
     }
 }

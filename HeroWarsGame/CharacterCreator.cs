@@ -16,6 +16,8 @@ namespace HeroWarsGame
         public CharacterCreator()
         {
             InitializeComponent();
+
+            
         }
 
         private void CC_NameBox_TextChanged(object sender, EventArgs e)
@@ -30,19 +32,34 @@ namespace HeroWarsGame
             try
             {
                 save.RefreshCharNames();
-                if (!CC_NameBox.Text.Any(char.IsDigit) && CC_NameBox.Text != "")
+                for (int i = 0; i < CC_NameBox.Text.Length; i++)
+                {
+                    if (!((char)CC_NameBox.Text[i] >= 65 && (char)CC_NameBox.Text[i] <= 90) &&
+                        !((char)CC_NameBox.Text[i] >= 97 && (char)CC_NameBox.Text[i] <= 122))
+                    {
+                        MessageBox.Show("Your hero name must not contain numbers or special characters!");
+                            throw new Exception();
+                    }
+                }
+                if (!CC_NameBox.Text.Any(char.IsDigit) && CC_NameBox.Text != "" && !(CC_NameBox.Text.Length > 18))
                 {
                     bool contains = false;
-
-                    using (StreamReader readNames = File.OpenText(@"D:\\Names.txt"))
+                    if (!File.Exists(@"D:\\Names.txt"))
                     {
-                        while (!readNames.EndOfStream)
-                        {
-                            string line = readNames.ReadLine();
-                            if (CC_NameBox.Text == line)
-                                contains = true;
-                        }
+                        FileStream file = new FileStream(@"D:\\Names.txt", FileMode.Create, FileAccess.ReadWrite);
+                        file.Close();
                     }
+                    else
+                        using (StreamReader readNames = File.OpenText(@"D:\\Names.txt"))
+                        {
+                            while (!readNames.EndOfStream)
+                            {
+                                string line = readNames.ReadLine();
+                                if (CC_NameBox.Text == line)
+                                    contains = true;
+                            }
+                            readNames.Close();
+                        }
                     if (!contains)
                         Name = CC_NameBox.Text;
                     else
@@ -54,8 +71,17 @@ namespace HeroWarsGame
                 }
                 else
                 {
-                    MessageBox.Show("Invalid name. Please try again!");
-                    throw new Exception("Invalid name!");
+                    if (CC_NameBox.Text.Length > 18)
+                    {
+                        MessageBox.Show("Name is too long!");
+                        throw new Exception("Name is too long!");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Invalid name. Please try again!");
+                        throw new Exception("Invalid name!");
+                    }
+                    
                 }
 
                 if (CC_Male.Checked)
@@ -97,9 +123,12 @@ namespace HeroWarsGame
 
                 Hero player;
 
-                if (race.ToString() == "Human") player = new Human(Name, Gender, _class);
-                else if (race.ToString() == "Elf") player = new Elf(Name, Gender, _class);
-                else player = new Dwarf(Name, Gender, _class);
+                if (race.ToString() == "Human") 
+                    player = new Human(Name, Gender, _class);
+                else if (race.ToString() == "Elf") 
+                    player = new Elf(Name, Gender, _class);
+                else 
+                    player = new Dwarf(Name, Gender, _class);
 
 
                 MessageBoxButtons buttons = MessageBoxButtons.YesNo;
@@ -111,6 +140,7 @@ namespace HeroWarsGame
                     string SaveContents = player.Name + "," + player.Gender + "," + player._Class + "," + player.Race +
                             "," + player.Lvl + "," + player.Gold + "," + player.Dmg + "," + player.Health + "," + player.Wins;
 
+                    
 
                     using (FileStream file = new FileStream(filePath, FileMode.Append, FileAccess.Write))
                     {
@@ -118,8 +148,6 @@ namespace HeroWarsGame
                         sw.WriteLine(SaveContents);
                         sw.Close();
                     }
-
-
 
                     this.Hide();
                     Saves saves = new Saves();

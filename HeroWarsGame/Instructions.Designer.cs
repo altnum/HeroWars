@@ -47,7 +47,10 @@
             // Instr_OK
             // 
             this.Instr_OK.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.Instr_OK.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Instr_OK.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Instr_OK.Image = ((System.Drawing.Image)(resources.GetObject("Instr_OK.Image")));
+            this.Instr_OK.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Instr_OK.Location = new System.Drawing.Point(231, 245);
             this.Instr_OK.Name = "Instr_OK";
             this.Instr_OK.Size = new System.Drawing.Size(64, 23);

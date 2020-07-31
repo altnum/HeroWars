@@ -49,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BattleLogs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BattleLogs.Designer.cs">
+      <DependentUpon>BattleLogs.cs</DependentUpon>
+    </Compile>
     <Compile Include="CharacterCreator.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,21 +67,23 @@
     <Compile Include="ClassSpecs.Designer.cs">
       <DependentUpon>ClassSpecs.cs</DependentUpon>
     </Compile>
-    <Compile Include="Dwarf.cs" />
-    <Compile Include="Elf.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Hero.cs" />
-    <Compile Include="Human.cs" />
     <Compile Include="Instructions.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Instructions.Designer.cs">
       <DependentUpon>Instructions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogIn.Designer.cs">
+      <DependentUpon>LogIn.cs</DependentUpon>
     </Compile>
     <Compile Include="MainMenu.cs">
       <SubType>Form</SubType>
@@ -83,12 +91,17 @@
     <Compile Include="MainMenu.Designer.cs">
       <DependentUpon>MainMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Mob.cs" />
     <Compile Include="RacePerks.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="RacePerks.Designer.cs">
       <DependentUpon>RacePerks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registration.Designer.cs">
+      <DependentUpon>Registration.cs</DependentUpon>
     </Compile>
     <Compile Include="Save.cs" />
     <Compile Include="Saves.cs">
@@ -105,6 +118,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BattleLogs.resx">
+      <DependentUpon>BattleLogs.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CharacterCreator.resx">
       <DependentUpon>CharacterCreator.cs</DependentUpon>
     </EmbeddedResource>
@@ -117,11 +133,17 @@
     <EmbeddedResource Include="Instructions.resx">
       <DependentUpon>Instructions.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="LogIn.resx">
+      <DependentUpon>LogIn.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RacePerks.resx">
       <DependentUpon>RacePerks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registration.resx">
+      <DependentUpon>Registration.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Saves.resx">
       <DependentUpon>Saves.cs</DependentUpon>
@@ -178,6 +200,168 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\lightning21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GoblinArcher.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GoblinGunner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\GoblinMage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OrcArcher.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OrcGunner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OrcMage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TrollArcher.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TrollGunner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TrollMage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DwarfFArcher_B.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DwarfFGunner_B.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DwarfFMage_B.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DwarfMArcher_B.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DwarfMGunner_B.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DwarfMMage_B.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ElfFArcher_B.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ElfFGunner_B.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ElfFMage_B.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ElfMArcher_B.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ElfMGunner_B.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ElfMMage_B.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HumanFArcher_B.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HumanFGunner_B.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HumanFMage_B.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HumanMArcher_B.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HumanMGunner_B.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HumanMMage_B.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DwarfFArcher.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DwarfFGunner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DwarfFMage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DwarfMArcher.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DwarfMGunner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DwarfMMage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ElfFArcher.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ElfFGunner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ElfFMage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ElfMArcher.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ElfMGunner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ElfMMage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HumanFArcher.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HumanFGunner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HumanFMage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HumanMArcher.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HumanMGunner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HumanMMage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Battlefield.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Buttons.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainMenu1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\StartMenu.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diamond.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Users.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Lib\Lib.csproj">
+      <Project>{7f6e7fdd-6ff6-4788-b85e-6de55ef21705}</Project>
+      <Name>Lib</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -8,12 +8,17 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.Security.Cryptography.X509Certificates;
+using Lib;
+using System.Runtime.Serialization;
 
 namespace HeroWarsGame
 {
     public partial class StartMenu : Form
     {
-        
+        public static List<Battlelogs> Logs = new List<Battlelogs>();
+
         private Save save = new Save();
         
         public StartMenu()
@@ -78,7 +83,8 @@ namespace HeroWarsGame
         }
 
         private void StarMenu_Quit_Click(object sender, EventArgs e)
-        {  
+        {
+            File.Delete(@"D:\\HeroWarsSaves.txt");
             save.QuitGame();
             Application.Exit();
         }
@@ -87,6 +93,31 @@ namespace HeroWarsGame
         {
             Instructions instr = new Instructions();
             instr.ShowDialog();
+        }
+        private void BattleLogs_Click(object sender, EventArgs e)
+        {
+            bool isEmpty = true;
+
+                IFormatter binFormatter = new BinaryFormatter();
+            using (Stream stream = File.Open(@"D:\\BattleLogs.db", FileMode.Open))
+            {
+                if (stream.Length != 0)
+                {
+                    Logs.Clear();
+                    ((List<Battlelogs>)binFormatter.Deserialize(stream)).ForEach((battlelog)=> {
+                        Logs.Add(battlelog);   
+                    });
+
+                    isEmpty = false;
+                }
+            }
+            if (!isEmpty)
+            {
+                BattleLogs battleLogs = new BattleLogs();
+                battleLogs.ShowDialog();
+            }
+            else
+            MessageBox.Show("Log history is empty!");
         }
     }
 }

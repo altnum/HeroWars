@@ -118,31 +118,184 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="DwarfFArcher" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DwarfFArcher.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DwarfFGunner_B" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DwarfFGunner_B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DwarfFArcher_B" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DwarfFArcher_B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OrcArcher" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OrcArcher.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="lightning" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\lightning.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DwarfFMage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DwarfFMage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HumanMMage_B" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HumanMMage_B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="arrow" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\arrow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="arrow2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\arrow2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Buttons" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Buttons.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HumanFMage_B" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HumanFMage_B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bullet2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bullet2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="lightning2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\lightning2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Battlefield" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Battlefield.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bullet" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bullet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="OrcMage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OrcMage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HumanFGunner_B" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HumanFGunner_B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="MainMenu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\MainMenu1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HumanFMage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HumanFMage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ElfFArcher" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ElfFArcher.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ElfMGunner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ElfMGunner.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DwarfMMage_B" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DwarfMMage_B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HumanMGunner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HumanMGunner.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ElfFArcher_B" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ElfFArcher_B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lightning21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lightning21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ElfFGunner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ElfFGunner.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DwarfMArcher_B" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DwarfMArcher_B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DwarfFGunner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DwarfFGunner.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HumanMArcher_B" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HumanMArcher_B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ElfMMage_B" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ElfMMage_B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HumanMGunner_B" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HumanMGunner_B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ElfFGunner_B" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ElfFGunner_B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GoblinMage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GoblinMage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ElfMGunner_B" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ElfMGunner_B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DwarfMMage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DwarfMMage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ElfMArcher_B" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ElfMArcher_B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DwarfMGunner_B" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DwarfMGunner_B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="arrow21" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\arrow21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="TrollGunner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TrollGunner.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HumanFArcher_B" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HumanFArcher_B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TrollArcher" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TrollArcher.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DwarfMGunner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DwarfMGunner.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DwarfMArcher" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DwarfMArcher.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ElfMMage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ElfMMage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HumanFArcher" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HumanFArcher.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ElfMArcher" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ElfMArcher.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrow2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arrow2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bullet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bullet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="DwarfFMage_B" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\DwarfFMage_B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ElfFMage_B" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ElfFMage_B.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="bullet21" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bullet21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="lightning21" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\lightning21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="coin" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\coin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ElfFMage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ElfFMage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HumanMArcher" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HumanMArcher.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GoblinGunner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GoblinGunner.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="StartMenu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\StartMenu.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="OrcGunner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\OrcGunner.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TrollMage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TrollMage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="GoblinArcher" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\GoblinArcher.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HumanMMage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HumanMMage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="HumanFGunner" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\HumanFGunner.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lightning2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lightning2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="diamond" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\diamond.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

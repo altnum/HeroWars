@@ -47,10 +47,13 @@
             // ClassSpecs_Ok
             // 
             this.ClassSpecs_Ok.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.ClassSpecs_Ok.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.ClassSpecs_Ok.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ClassSpecs_Ok.Location = new System.Drawing.Point(239, 276);
+            this.ClassSpecs_Ok.Image = ((System.Drawing.Image)(resources.GetObject("ClassSpecs_Ok.Image")));
+            this.ClassSpecs_Ok.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.ClassSpecs_Ok.Location = new System.Drawing.Point(234, 276);
             this.ClassSpecs_Ok.Name = "ClassSpecs_Ok";
-            this.ClassSpecs_Ok.Size = new System.Drawing.Size(66, 25);
+            this.ClassSpecs_Ok.Size = new System.Drawing.Size(71, 25);
             this.ClassSpecs_Ok.TabIndex = 1;
             this.ClassSpecs_Ok.Text = "OK";
             this.ClassSpecs_Ok.UseVisualStyleBackColor = false;

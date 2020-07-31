@@ -37,7 +37,10 @@
             // RacePerks_OK
             // 
             this.RacePerks_OK.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.RacePerks_OK.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.RacePerks_OK.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RacePerks_OK.Image = ((System.Drawing.Image)(resources.GetObject("RacePerks_OK.Image")));
+            this.RacePerks_OK.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.RacePerks_OK.Location = new System.Drawing.Point(218, 246);
             this.RacePerks_OK.Name = "RacePerks_OK";
             this.RacePerks_OK.Size = new System.Drawing.Size(75, 23);

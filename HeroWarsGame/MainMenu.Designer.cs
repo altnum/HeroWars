@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainMenu));
-            this.MM_CharName = new System.Windows.Forms.TextBox();
             this.MM_Level = new System.Windows.Forms.TextBox();
             this.MM_Gold = new System.Windows.Forms.TextBox();
             this.MM_Wins = new System.Windows.Forms.TextBox();
@@ -44,23 +43,10 @@
             this.MM_LvlText = new System.Windows.Forms.Label();
             this.MM_CharPreview = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.MM_CharName = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.MM_CharPreview)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // MM_CharName
-            // 
-            this.MM_CharName.AccessibleName = "False";
-            this.MM_CharName.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.MM_CharName.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.MM_CharName.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.MM_CharName.Location = new System.Drawing.Point(104, 124);
-            this.MM_CharName.Name = "MM_CharName";
-            this.MM_CharName.ReadOnly = true;
-            this.MM_CharName.Size = new System.Drawing.Size(120, 24);
-            this.MM_CharName.TabIndex = 6;
-            this.MM_CharName.Text = "CharacterName";
-            this.MM_CharName.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // MM_Level
             // 
@@ -69,7 +55,7 @@
             this.MM_Level.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.MM_Level.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.MM_Level.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.MM_Level.Location = new System.Drawing.Point(104, 262);
+            this.MM_Level.Location = new System.Drawing.Point(347, 261);
             this.MM_Level.Name = "MM_Level";
             this.MM_Level.ReadOnly = true;
             this.MM_Level.Size = new System.Drawing.Size(120, 17);
@@ -83,7 +69,7 @@
             this.MM_Gold.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.MM_Gold.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.MM_Gold.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.MM_Gold.Location = new System.Drawing.Point(104, 293);
+            this.MM_Gold.Location = new System.Drawing.Point(347, 293);
             this.MM_Gold.Name = "MM_Gold";
             this.MM_Gold.ReadOnly = true;
             this.MM_Gold.Size = new System.Drawing.Size(120, 17);
@@ -97,7 +83,7 @@
             this.MM_Wins.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.MM_Wins.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.MM_Wins.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.MM_Wins.Location = new System.Drawing.Point(104, 321);
+            this.MM_Wins.Location = new System.Drawing.Point(347, 323);
             this.MM_Wins.Name = "MM_Wins";
             this.MM_Wins.ReadOnly = true;
             this.MM_Wins.Size = new System.Drawing.Size(120, 17);
@@ -111,7 +97,7 @@
             this.MM_Dmg.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.MM_Dmg.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.MM_Dmg.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.MM_Dmg.Location = new System.Drawing.Point(104, 353);
+            this.MM_Dmg.Location = new System.Drawing.Point(347, 358);
             this.MM_Dmg.Name = "MM_Dmg";
             this.MM_Dmg.ReadOnly = true;
             this.MM_Dmg.Size = new System.Drawing.Size(120, 17);
@@ -120,6 +106,7 @@
             // 
             // MM_SwitchChar
             // 
+            this.MM_SwitchChar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.MM_SwitchChar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MM_SwitchChar.Image = ((System.Drawing.Image)(resources.GetObject("MM_SwitchChar.Image")));
             this.MM_SwitchChar.Location = new System.Drawing.Point(583, 293);
@@ -132,6 +119,7 @@
             // 
             // MM_QuitStartMenu
             // 
+            this.MM_QuitStartMenu.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.MM_QuitStartMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MM_QuitStartMenu.Image = ((System.Drawing.Image)(resources.GetObject("MM_QuitStartMenu.Image")));
             this.MM_QuitStartMenu.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -145,9 +133,10 @@
             // 
             // MM_ToBattle
             // 
+            this.MM_ToBattle.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.MM_ToBattle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MM_ToBattle.Image = ((System.Drawing.Image)(resources.GetObject("MM_ToBattle.Image")));
-            this.MM_ToBattle.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.MM_ToBattle.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.MM_ToBattle.Location = new System.Drawing.Point(583, 250);
             this.MM_ToBattle.Name = "MM_ToBattle";
             this.MM_ToBattle.Size = new System.Drawing.Size(115, 29);
@@ -159,10 +148,11 @@
             // MM_IncreaseDmg
             // 
             this.MM_IncreaseDmg.BackColor = System.Drawing.SystemColors.Control;
-            this.MM_IncreaseDmg.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.MM_IncreaseDmg.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.MM_IncreaseDmg.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.MM_IncreaseDmg.Image = ((System.Drawing.Image)(resources.GetObject("MM_IncreaseDmg.Image")));
             this.MM_IncreaseDmg.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.MM_IncreaseDmg.Location = new System.Drawing.Point(230, 349);
+            this.MM_IncreaseDmg.Location = new System.Drawing.Point(473, 354);
             this.MM_IncreaseDmg.Name = "MM_IncreaseDmg";
             this.MM_IncreaseDmg.Size = new System.Drawing.Size(24, 26);
             this.MM_IncreaseDmg.TabIndex = 22;
@@ -177,7 +167,7 @@
             this.MM_DmgTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.MM_DmgTxt.Image = ((System.Drawing.Image)(resources.GetObject("MM_DmgTxt.Image")));
             this.MM_DmgTxt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.MM_DmgTxt.Location = new System.Drawing.Point(48, 352);
+            this.MM_DmgTxt.Location = new System.Drawing.Point(286, 358);
             this.MM_DmgTxt.Name = "MM_DmgTxt";
             this.MM_DmgTxt.Size = new System.Drawing.Size(47, 18);
             this.MM_DmgTxt.TabIndex = 20;
@@ -189,7 +179,7 @@
             this.MM_WinsText.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.MM_WinsText.Image = ((System.Drawing.Image)(resources.GetObject("MM_WinsText.Image")));
             this.MM_WinsText.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.MM_WinsText.Location = new System.Drawing.Point(50, 321);
+            this.MM_WinsText.Location = new System.Drawing.Point(286, 323);
             this.MM_WinsText.Name = "MM_WinsText";
             this.MM_WinsText.Size = new System.Drawing.Size(46, 18);
             this.MM_WinsText.TabIndex = 15;
@@ -201,7 +191,7 @@
             this.MM_GoldText.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.MM_GoldText.Image = ((System.Drawing.Image)(resources.GetObject("MM_GoldText.Image")));
             this.MM_GoldText.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.MM_GoldText.Location = new System.Drawing.Point(52, 292);
+            this.MM_GoldText.Location = new System.Drawing.Point(286, 293);
             this.MM_GoldText.Name = "MM_GoldText";
             this.MM_GoldText.Size = new System.Drawing.Size(44, 18);
             this.MM_GoldText.TabIndex = 14;
@@ -213,7 +203,7 @@
             this.MM_LvlText.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.MM_LvlText.Image = ((System.Drawing.Image)(resources.GetObject("MM_LvlText.Image")));
             this.MM_LvlText.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.MM_LvlText.Location = new System.Drawing.Point(66, 262);
+            this.MM_LvlText.Location = new System.Drawing.Point(301, 261);
             this.MM_LvlText.Name = "MM_LvlText";
             this.MM_LvlText.Size = new System.Drawing.Size(29, 18);
             this.MM_LvlText.TabIndex = 13;
@@ -223,10 +213,12 @@
             // MM_CharPreview
             // 
             this.MM_CharPreview.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.MM_CharPreview.Image = ((System.Drawing.Image)(resources.GetObject("MM_CharPreview.Image")));
-            this.MM_CharPreview.Location = new System.Drawing.Point(280, 161);
+            this.MM_CharPreview.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.MM_CharPreview.Image = global::HeroWarsGame.Properties.Resources.HumanMGunner;
+            this.MM_CharPreview.Location = new System.Drawing.Point(67, 164);
             this.MM_CharPreview.Name = "MM_CharPreview";
-            this.MM_CharPreview.Size = new System.Drawing.Size(204, 214);
+            this.MM_CharPreview.Size = new System.Drawing.Size(213, 220);
+            this.MM_CharPreview.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.MM_CharPreview.TabIndex = 0;
             this.MM_CharPreview.TabStop = false;
             this.MM_CharPreview.Click += new System.EventHandler(this.MM_CharPreview_Click);
@@ -241,11 +233,29 @@
             this.pictureBox1.TabIndex = 28;
             this.pictureBox1.TabStop = false;
             // 
+            // MM_CharName
+            // 
+            this.MM_CharName.AutoSize = true;
+            this.MM_CharName.BackColor = System.Drawing.Color.Transparent;
+            this.MM_CharName.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.MM_CharName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.MM_CharName.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.MM_CharName.Image = global::HeroWarsGame.Properties.Resources.Buttons;
+            this.MM_CharName.Location = new System.Drawing.Point(70, 133);
+            this.MM_CharName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.MM_CharName.Name = "MM_CharName";
+            this.MM_CharName.Size = new System.Drawing.Size(52, 17);
+            this.MM_CharName.TabIndex = 29;
+            this.MM_CharName.Text = "label1";
+            this.MM_CharName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.MM_CharName.Click += new System.EventHandler(this.MM_CharName_Click);
+            // 
             // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 436);
+            this.Controls.Add(this.MM_CharName);
             this.Controls.Add(this.MM_SwitchChar);
             this.Controls.Add(this.MM_QuitStartMenu);
             this.Controls.Add(this.MM_ToBattle);
@@ -258,11 +268,11 @@
             this.Controls.Add(this.MM_Wins);
             this.Controls.Add(this.MM_Gold);
             this.Controls.Add(this.MM_Level);
-            this.Controls.Add(this.MM_CharName);
             this.Controls.Add(this.MM_CharPreview);
             this.Controls.Add(this.pictureBox1);
             this.Name = "MainMenu";
             this.Text = "MainMenu";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainMenu_FormClosing);
             this.Load += new System.EventHandler(this.MainMenu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.MM_CharPreview)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -274,7 +284,6 @@
         #endregion
 
         private System.Windows.Forms.PictureBox MM_CharPreview;
-        private System.Windows.Forms.TextBox MM_CharName;
         private System.Windows.Forms.TextBox MM_Level;
         private System.Windows.Forms.TextBox MM_Gold;
         private System.Windows.Forms.TextBox MM_Wins;
@@ -288,5 +297,6 @@
         private System.Windows.Forms.Button MM_QuitStartMenu;
         private System.Windows.Forms.Button MM_SwitchChar;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label MM_CharName;
     }
 }

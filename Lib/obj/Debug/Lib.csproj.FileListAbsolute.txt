@@ -1,0 +1,6 @@
+C:\Users\Acer\source\repos\HeroWarsGame C#\repos\HeroWarsGame4.28\Lib\bin\Debug\Lib.dll
+C:\Users\Acer\source\repos\HeroWarsGame C#\repos\HeroWarsGame4.28\Lib\bin\Debug\Lib.pdb
+C:\Users\Acer\source\repos\HeroWarsGame C#\repos\HeroWarsGame4.28\Lib\obj\Debug\Lib.csprojAssemblyReference.cache
+C:\Users\Acer\source\repos\HeroWarsGame C#\repos\HeroWarsGame4.28\Lib\obj\Debug\Lib.csproj.CoreCompileInputs.cache
+C:\Users\Acer\source\repos\HeroWarsGame C#\repos\HeroWarsGame4.28\Lib\obj\Debug\Lib.dll
+C:\Users\Acer\source\repos\HeroWarsGame C#\repos\HeroWarsGame4.28\Lib\obj\Debug\Lib.pdb

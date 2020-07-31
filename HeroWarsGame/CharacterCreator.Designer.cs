@@ -87,6 +87,7 @@
             // 
             // CC_RacePerks
             // 
+            this.CC_RacePerks.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.CC_RacePerks.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CC_RacePerks.Image = ((System.Drawing.Image)(resources.GetObject("CC_RacePerks.Image")));
             this.CC_RacePerks.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -100,6 +101,7 @@
             // 
             // Cancel
             // 
+            this.Cancel.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Cancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Cancel.Image = ((System.Drawing.Image)(resources.GetObject("Cancel.Image")));
             this.Cancel.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -190,6 +192,7 @@
             // 
             // CC_Create
             // 
+            this.CC_Create.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.CC_Create.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CC_Create.Image = ((System.Drawing.Image)(resources.GetObject("CC_Create.Image")));
             this.CC_Create.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -213,6 +216,7 @@
             // 
             // CC_ClassSpecs
             // 
+            this.CC_ClassSpecs.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.CC_ClassSpecs.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CC_ClassSpecs.Image = ((System.Drawing.Image)(resources.GetObject("CC_ClassSpecs.Image")));
             this.CC_ClassSpecs.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
